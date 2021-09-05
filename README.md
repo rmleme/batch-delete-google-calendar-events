@@ -1,5 +1,6 @@
 # batch-delete-google-calendar-events
-Bulk delete of Google Calendar events given a date range
+
+Bulk delete of Google Calendar's default calendar events given a date range.
 
 ## Running the script
 
