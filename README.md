@@ -3,11 +3,15 @@ Bulk delete of Google Calendar events given a date range
 
 ## Running the script
 
-1. Edit `BulkDeleteGoogleCalendarEvents.gs` (modify `startDate` and `endDate` to your needs).
-1. Import `BulkDeleteGoogleCalendarEvents.gs` to your Google Drive.
-1. Double click `BulkDeleteGoogleCalendarEvents.gs`. It will open [Google Apps Script](https://developers.google.com/apps-script) console.
-1. Click "Run" and wait until the script execution is completed.
-   1. The first execution requires authorization.
+1. Create a new [Google Apps Script](https://developers.google.com/apps-script). At your Google Drive: right-click --> click "More" --> click "Google Apps Script" (a new Apps Script tab will be launched).
+1. Rename your project from "Untitled project" to "BulkDeleteGoogleCalendarEvents".
+1. Replace the existing source code (typically an empty function) with the contents of `BulkDeleteGoogleCalendarEvents.gs`. Modify `startDate` and `endDate` to your needs.
+1. Save the modified function.
+   1. Before saving, ensure `startDate` and `endDate` values are correct.
+1. Click "Run".
+   1. The first execution requires authorization: "This project requires permission to access your data". Click "Review permissions" --> select the Google account whose calendar you want to delete events.
+   1. In case Google displays a message requesting access to sensitive info ("Google hasn't verified this app"), click "Advanced" --> "Go to BulkDeleteGoogleCalendarEvents (unsafe)" --> click "Allow".
+1. Wait until the script execution is completed.
 1. Check your Google Calendar. All events between `startDate` and `endDate` will have been deleted.
 
 ##
