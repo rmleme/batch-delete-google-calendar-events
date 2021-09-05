@@ -14,6 +14,10 @@ Bulk delete of Google Calendar events given a date range
 1. Wait until the script execution is completed.
 1. Check your Google Calendar. All events between `startDate` and `endDate` will have been deleted.
 
+## Improvements
+
+- Use [Google Drive REST API](https://developers.google.com/apps-script/guides/import-export) or [clasp](https://developers.google.com/apps-script/guides/clasp) to simplify the deployment process to Google Drive.
+
 ##
 
 **Note:** this repository should have been called `bulk-delete-google-calendar-events`, but I mistakenly used the term "*batch*" instead. As it had already been shared with the wrong name, I just decided to let it be :slightly_smiling_face:
